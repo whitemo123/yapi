@@ -20,7 +20,8 @@ const koaBody = require('koa-body');
 const router = require('./router.js');
 
 global.storageCreator = storageCreator;
-let indexFile = process.argv[2] === 'dev' ? 'dev.html' : 'index.html';
+// let indexFile = process.argv[2] === 'dev' ? 'dev.html' : 'index.html';
+let indexFile = process.argv[2] === 'dev' ? 'index.html' : 'index.html';
 
 const app = websockify(new Koa());
 app.proxy = true;

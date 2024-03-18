@@ -298,7 +298,6 @@ module.exports = async (ctx, next) => {
             ctx.request.body = ctx.request.body.fields;
           }
           // console.log('body', ctx.request.body)
-
           res = mockExtra(yapi.commons.json_parse(interfaceData.res_body), {
             query: ctx.request.query,
             body: ctx.request.body,
